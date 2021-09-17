@@ -1,0 +1,26 @@
+.card {
+    margin: 2rem;
+    max-width: 60rem;
+    min-height: 30rem;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-flow: wrap;
+
+    &_photo {
+        align-self: center;
+        border-radius: 20% !important;
+        max-width: 15rem;
+        margin: 2rem auto !important;
+    }
+
+    &_text {
+        margin: 1rem;
+        align-self: center;
+        max-width: 35rem;
+    } 
+}

@@ -1,0 +1,44 @@
+.card {
+    margin: 2rem;
+    max-width: 60rem;
+    min-height: 30rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    margin: 1rem;
+    // flex-flow: wrap;
+
+    &_text {
+        // align-self: center;
+        max-width: 35rem;
+    } 
+
+    &_icons {
+        display: flex;
+        background: rgb(234, 244, 255);
+        margin-top: 2rem;
+        justify-content: flex-start;
+        align-items: baseline;
+
+        &:hover {
+            transform: translateY(-.2rem);
+        
+            .main-link {
+                color: #1f80ff;
+            }
+        }
+    }
+}
+
+.icon {    
+    margin: 0 3rem;
+    max-width: 1rem;
+
+    img {
+        margin: 0 !important;
+    }
+}
