@@ -31,7 +31,7 @@ export class ProjectCardsComponent {
     },
     { 
       title: 'Location Info App', 
-      description: 'I explore Typescript on its own and experiment with some RESTful API calls from Google Maps, as well as OpenWeather. This allows you to enter a location which will be marked on a google map widget with a pin, and some current information for the entered location will display including elevation, current temperature, and weather conditions. There is another feature I was messing with where you can choose a state, and then a county, and it will list all trailheads for that county below. I intend on recreating and improving this app in Angular soon.',
+      description: 'I explore Typescript on its own and experiment with some RESTful API calls from Google Maps, as well as OpenWeather. This allows you to enter a location which will be marked on a google map widget with a pin, and some current information for the entered location will display including elevation, current temperature, and weather conditions. I intend on recreating and improving this app in Angular soon.',
       codeDescription: 'Typescript',
       viewBrowser: 'https://location-info-3c68f.web.app/',
       viewCode: 'https://github.com/branthajek/location-info',
