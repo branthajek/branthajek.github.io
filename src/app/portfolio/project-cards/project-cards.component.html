@@ -1,27 +1,22 @@
-<!-- <div class="grid-container">
-  <mat-grid-list cols="2" rowHeight="3:4">
-    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows"> -->
-  <div class="card-container">
-      <mat-card class="dashboard-card" *ngFor="let card of cards">
-        <mat-card-header>
-          <mat-card-title>
-            <h2 class="mat-h2">{{card.title}}</h2>
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-              <mat-icon>more_vert</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu" xPosition="before">
-              <button mat-menu-item (click)="openLink(card.viewCode)">View Code</button>
-              <button mat-menu-item (click)="openLink(card.viewBrowser)">View In Browser</button>
-            </mat-menu>
-          </mat-card-title>
-        </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
-          <h3 class="mat-h3">Description</h3>
-          <p>{{card.description}}</p>
-          <p>This project is made up of: {{card.codeDescription}}</p>
-        </mat-card-content>
-      </mat-card>
-  </div>  
-    <!-- </mat-grid-tile>
-  </mat-grid-list>
-</div> -->
+
+<div class="card-container">
+    <mat-card class="dashboard-card" *ngFor="let card of cards">
+      <mat-card-header>
+        <mat-card-title>
+          <h2 class="mat-h2">{{card.title}}</h2>
+          <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu" xPosition="before">
+            <button mat-menu-item (click)="openLink(card.viewCode)">View Code</button>
+            <button mat-menu-item (click)="openLink(card.viewBrowser)">View In Browser</button>
+          </mat-menu>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="dashboard-card-content">
+        <h3 class="mat-h3">Description</h3>
+        <p>{{card.description}}</p>
+        <p>({{card.codeDescription}})</p>
+      </mat-card-content>
+    </mat-card>
+</div>
