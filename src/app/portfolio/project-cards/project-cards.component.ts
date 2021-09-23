@@ -56,7 +56,7 @@ export class ProjectCardsComponent {
     },
     { 
       title: 'Weather App', 
-      description: 'Using plain ES6 Javascript, I created simple weather app using the OpenWeatherMap API. You can enter a city and get the current weather conditions for that location.',
+      description: 'Using plain ES6 Javascript, I created a simple weather app using the OpenWeatherMap API. You can enter a city and get the current weather conditions for that location.',
       codeDescription: 'Javascript, OpenWeatherMap API',
       viewBrowser: 'https://js-weather-app-5cf87.web.app',
       viewCode: 'https://github.com/branthajek/weather-app',
