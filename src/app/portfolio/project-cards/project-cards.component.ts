@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+
+import { ModalComponent } from './modal/modal.component';
 
 interface Project {
   title: string;
@@ -18,6 +21,15 @@ interface Project {
 
 export class ProjectCardsComponent {
   cards: Project[] = [
+    { 
+      title: 'Portfolio Site', 
+      description: 'I wanted to learn a little bit more about how to use Material components within an Angular app, so I made this site!',
+      codeDescription: 'Angular, Material Design',
+      viewBrowser: 'null',
+      viewCode: 'https://github.com/branthajek/branthajek.github.io',
+      cols: 1, 
+      rows: 1 
+    },
     { 
       title: 'Shopping List App', 
       description: 'This is a pretty big, full-featured Angular app in all of its glory. It allows you to create an account and add recipes along with ingredients and images, description, etc. The ingredients can be added to the shopping list, and your recipes can be saved to the database.',
@@ -65,11 +77,17 @@ export class ProjectCardsComponent {
     }
   ];
 
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
 
-
-  openLink(url: string){
-    window.open(url)
+  openDialog() {
+    this.dialog.open(ModalComponent);
   }
 
+  openLink(url: string){
+    if (url === 'null') {
+      this.openDialog();
+    } else {
+      window.open(url)
+    }
+  }
 }

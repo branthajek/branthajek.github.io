@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectCardsComponent } from './portfolio/project-cards/project-cards.component';
+import { ModalComponent } from './portfolio/project-cards/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { ProjectCardsComponent } from './portfolio/project-cards/project-cards.c
     AboutMeComponent,
     PortfolioComponent,
     ContactComponent,
-    ProjectCardsComponent
+    ProjectCardsComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { ProjectCardsComponent } from './portfolio/project-cards/project-cards.c
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
