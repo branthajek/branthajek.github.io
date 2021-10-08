@@ -42,7 +42,7 @@ export class ProjectCardsComponent {
     { 
       title: 'Location Info App', 
       description: 'I explore Typescript on its own and experiment with some RESTful API calls from Google Maps, as well as OpenWeather. This allows you to enter a location which will be marked on a google map widget with a pin, and some current information for the entered location will display including elevation, current temperature, and weather conditions.',
-      codeDescription: 'Typescript, Axios, Google Maps JS API, OpenWeatherMap API, Bootstrap',
+      codeDescription: 'Typescript, Axios, Google Maps JS API, OpenWeatherMap API, Bootstrap, Webpack',
       viewBrowser: 'https://location-info-3c68f.web.app/',
       viewCode: 'https://github.com/branthajek/location-info',
       cols: 1, 
@@ -60,7 +60,7 @@ export class ProjectCardsComponent {
     { 
       title: 'Drag and Drop', 
       description: 'Using only Typescript, I created validation for form inputs to create new projects that can be clicked and moved into the complete or in-progress categories.',
-      codeDescription: 'Typescript, Bootstrap',
+      codeDescription: 'Typescript, Bootstrap, Webpack',
       viewBrowser: 'https://drag-and-drop-98d15.web.app',
       viewCode: 'https://github.com/branthajek/projects-drag-n-drop',
       cols: 1, 
