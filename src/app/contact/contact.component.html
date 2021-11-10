@@ -3,18 +3,22 @@
         <mat-card-title><h1 class="mat-h1">Contact</h1></mat-card-title>
     </mat-card-header>
     <mat-card-content class="content">
+
         <p>You can find me at any of the links below.</p>
-        <mat-card (click)="openLinkedIn()" class="content-links">
-            <img class="icon" mat-card-image src="assets/images/linkedin-icon.png">
-            <h2 class="main-link mat-h2">Linked In</h2>
-        </mat-card>
-        <mat-card (click)="openEmail()" class="content-links">
-            <img class="icon" mat-card-image src="assets/images/gmail-icon.png">
-            <h2 class="main-link mat-h2">Gmail</h2>
-        </mat-card>    
-        <mat-card mat-raised-button (click)="openGitHub()" class="content-links">
-            <img class="icon" mat-card-image src="assets/images/github-icon.png">
-            <h2 class="main-link mat-h2">Github</h2>
-        </mat-card>
+
+        <section class="content-buttons">
+            <button mat-raised-button color="basic" (click)="openLinkedIn()">
+                <img class="icon" mat-card-image src="assets/images/linkedin-icon.png">
+                Linked In
+            </button>
+            <button mat-raised-button color="basic" (click)="openEmail()">
+                <img class="icon" mat-card-image src="assets/images/gmail-icon.png">
+                Gmail
+            </button>
+            <button mat-raised-button color="basic" (click)="openGitHub()">
+                <img class="icon" mat-card-image src="assets/images/github-icon.png">
+                Github
+            </button>
+        </section>
     </mat-card-content>
 </mat-card>

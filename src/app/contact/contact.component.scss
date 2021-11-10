@@ -5,35 +5,33 @@
     min-height: 30rem;
 }
 
-.content {
+.content, .content-buttons {
     display: flex;
     flex-direction: column;
     margin: 1rem;
+}
 
-    &-links {
-        display: flex;
-        background: rgb(234, 244, 255);
-        margin-top: 2rem;
-        justify-content: center;
-        align-items: center;
+button {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: rgb(234, 244, 255);
+}
+
+.icon {
+    margin: 0 .5rem 0 0 !important;
+    max-width: 3rem;
+}
+
+@media (min-width: 960px) {
+    button {
+        margin: 1rem;
+        padding: 3rem;
         flex-wrap: wrap;
-        cursor: pointer;
+    }
 
-        .icon {
-            margin: 0 !important;
-            max-width: 3rem;
-        }
-
-        .main-link {
-            margin-left: .5rem !important;
-        }
-
-        &:hover {
-            transform: translateY(-.1rem);
-        
-            .main-link {
-                color: #1f80ff;
-            }
-        }
+    .content-buttons {
+        flex-direction: row;
+        align-self: center;
+        margin-top: 2rem;
     }
 }
