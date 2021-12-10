@@ -22,16 +22,16 @@ button {
     max-width: 3rem;
 }
 
-@media (min-width: 960px) {
-    button {
-        margin: 1rem;
-        padding: 3rem;
-        flex-wrap: wrap;
-    }
+// @media (min-width: 960px) {
+//     button {
+//         margin: 1rem;
+//         padding: 3rem;
+//         flex-wrap: wrap;
+//     }
 
-    .content-buttons {
-        flex-direction: row;
-        align-self: center;
-        margin-top: 2rem;
-    }
-}
+//     .content-buttons {
+//         flex-direction: row;
+//         align-self: center;
+//         margin-top: 2rem;
+//     }
+// }
