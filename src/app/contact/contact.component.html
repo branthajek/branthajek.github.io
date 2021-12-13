@@ -6,7 +6,7 @@
 
         <p>You can find me at any of the links below.</p>
 
-        <section class="content-buttons">
+        <section class="content-buttons-mobile">
             <button mat-raised-button color="basic" (click)="openLinkedIn()">
                 <img class="icon" mat-card-image src="assets/images/linkedin-icon.png">
                 Linked In
@@ -16,6 +16,21 @@
                 Gmail
             </button>
             <button mat-raised-button color="basic" (click)="openGitHub()">
+                <img class="icon" mat-card-image src="assets/images/github-icon.png">
+                Github
+            </button>
+        </section>
+
+        <section class="content-buttons">
+            <button mat-button color="basic" (click)="openLinkedIn()">
+                <img class="icon" mat-card-image src="assets/images/linkedin-icon.png">
+                Linked In
+            </button>
+            <button mat-button color="basic" (click)="openEmail()">
+                <img class="icon" mat-card-image src="assets/images/gmail-icon.png">
+                Gmail
+            </button>
+            <button mat-button color="basic" (click)="openGitHub()">
                 <img class="icon" mat-card-image src="assets/images/github-icon.png">
                 Github
             </button>

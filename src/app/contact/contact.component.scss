@@ -5,7 +5,11 @@
     min-height: 30rem;
 }
 
-.content, .content-buttons {
+.content-buttons {
+    display: none;
+}
+
+.content, .content-buttons-mobile {
     display: flex;
     flex-direction: column;
     margin: 1rem;
@@ -22,16 +26,29 @@ button {
     max-width: 3rem;
 }
 
-// @media (min-width: 960px) {
-//     button {
-//         margin: 1rem;
-//         padding: 3rem;
-//         flex-wrap: wrap;
-//     }
+@media (min-width: 846px) {
+    .content-buttons-mobile {
+        display: none;
+    }
+    .content-buttons {
+        display: flex;
+    }
 
-//     .content-buttons {
-//         flex-direction: row;
-//         align-self: center;
-//         margin-top: 2rem;
-//     }
-// }
+    button {
+        margin: 1rem;
+        padding: 3rem;
+        flex-wrap: wrap;
+        background: none;
+    }
+
+    .content-buttons {
+        flex-direction: row;
+        align-self: center;
+        margin-top: 2rem;
+    }
+
+    .icon {
+        margin: 0 .5rem 0 0 !important;
+        max-width: 5rem;
+    }
+}
