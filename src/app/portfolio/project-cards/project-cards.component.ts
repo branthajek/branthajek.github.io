@@ -22,6 +22,15 @@ interface Project {
 export class ProjectCardsComponent {
   cards: Project[] = [
     { 
+      title: 'Record Library', 
+      description: 'This project was made so I could have access to a list of all of my records I own from anywhere. I can add to it easily, remove from the list, update how it is sorted, and search through the list for keywords.',
+      codeDescription: 'Angular, Bootstrap, Firebase',
+      viewBrowser: 'https://record-library-90ac8.web.app/library',
+      viewCode: 'https://github.com/branthajek/record-library',
+      cols: 1, 
+      rows: 1 
+    },
+    { 
       title: 'Portfolio Site', 
       description: 'I wanted to learn a little bit more about how to use Material components within an Angular app, so I made this site!',
       codeDescription: 'Angular, Material Design',
