@@ -22,6 +22,15 @@ interface Project {
 export class ProjectCardsComponent {
   cards: Project[] = [
     { 
+      title: 'Meetup App', 
+      description: 'Revisiting React, I made this simple demo app with a firebase backend.',
+      codeDescription: 'React, Firebase',
+      viewBrowser: 'https://meetups-app-e77c3.web.app/',
+      viewCode: 'https://github.com/branthajek/meetup-app',
+      cols: 1, 
+      rows: 1 
+    },
+    { 
       title: 'Record Library', 
       description: 'This project was made so I could have access to a list of all of my records I own from anywhere. I can add to it easily, remove from the list, update how it is sorted, and search through the list for keywords.',
       codeDescription: 'Angular, Bootstrap, Firebase',
